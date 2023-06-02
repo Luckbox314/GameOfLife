@@ -16,6 +16,17 @@ if (!navigator.gpu) {
     // add warning to page
     document.body.className = "error";
     document.body.innerHTML = "Your browser does not support WebGPU!";
+    document.body.style.color = "red";
+    document.body.style.fontSize = "x-large";
+    document.body.style.fontWeight = "bold";
+    document.body.style.textAlign = "center";
+    document.body.style.paddingTop = "45vh";
+    document.body.style.backgroundColor = "black";
+    document.body.style.margin = "0";
+    document.body.style.height = "100vh";
+    document.body.style.width = "100vw";
+    document.body.style.overflow = "hidden";
+    document.body.style.fontFamily = "roboto, sans-serif";
     throw new Error("WebGPU not supported on this browser.");
 }
 const adapter = await navigator.gpu.requestAdapter({powerPreference: 'low-power'});
