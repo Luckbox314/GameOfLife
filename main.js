@@ -15,7 +15,7 @@ const WORKGROUP_SIZE = 8;
 if (!navigator.gpu) {
     // add warning to page
     document.body.className = "error";
-    document.body.innerHTML = "Your browser does not support WebGPU!";
+    document.body.innerHTML = "Your browser does not support WebGPU! </br><a href='https://caniuse.com/webgpu'>supported browsers</a>";
     document.body.style.color = "red";
     document.body.style.fontSize = "x-large";
     document.body.style.fontWeight = "bold";
